@@ -4,65 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitRehber Türkiye</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">FitRehber</a>
+            <ul class="nav-links">
+                <li><a href="#explore-programs">Programlar</a></li>
+                <li><a href="#trainers">Eğitmenler</a></li>
+                <li><a href="#become-trainer" class="btn">Eğitmen Ol</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
-    <header class="hero-section">
-        <div class="hero-content">
-            <h1>Türkiye'nin En İyi Fitness Eğitmenlerini Keşfedin!</h1>
-            <p>Kendi hedeflerinize uygun fitness eğitmenlerini ve programlarını bulun.</p>
-            <div class="hero-buttons">
-                <a href="#explore-programs" class="btn">Programları Keşfet</a>
-                <a href="#become-trainer" class="btn">Eğitmen Ol</a>
+    <header class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Türkiye'nin En İyi Fitness Eğitmenlerini Keşfedin!</h1>
+                <p>Kendi hedeflerinize uygun fitness programlarını bulun ve hemen başlayın.</p>
+                <div class="cta-buttons">
+                    <a href="#explore-programs" class="btn-primary">Programları Keşfet</a>
+                    <a href="#trainers" class="btn-secondary">Eğitmenleri Gör</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="hero-image.png" alt="Hero Fitness">
             </div>
         </div>
     </header>
 
-    <!-- Trainer Carousel -->
-    <section class="trainer-carousel">
-        <h2>Popüler Eğitmenler</h2>
-        <div class="carousel">
-            <div class="trainer-card">
-                <img src="trainer1.jpg" alt="Trainer 1">
-                <h3>Ahmet Yılmaz</h3>
-                <p>Yoga Uzmanı</p>
-                <p>₺250</p>
-                <a href="#" class="btn">Profiline Git</a>
+    <!-- Featured Trainers -->
+    <section id="trainers" class="trainers">
+        <div class="container">
+            <h2 class="section-title">Popüler Eğitmenler</h2>
+            <div class="trainer-grid">
+                <div class="trainer-card">
+                    <img src="trainer1.jpg" alt="Trainer 1">
+                    <h3>Ahmet Yılmaz</h3>
+                    <p>Yoga Uzmanı</p>
+                    <p class="price">₺250</p>
+                    <a href="#" class="btn-secondary">Profiline Git</a>
+                </div>
+                <div class="trainer-card">
+                    <img src="trainer2.jpg" alt="Trainer 2">
+                    <h3>Aylin Kaya</h3>
+                    <p>Pilates Eğitmeni</p>
+                    <p class="price">₺300</p>
+                    <a href="#" class="btn-secondary">Profiline Git</a>
+                </div>
+                <div class="trainer-card">
+                    <img src="trainer3.jpg" alt="Trainer 3">
+                    <h3>Mehmet Demir</h3>
+                    <p>Fonksiyonel Antrenör</p>
+                    <p class="price">₺350</p>
+                    <a href="#" class="btn-secondary">Profiline Git</a>
+                </div>
             </div>
-            <div class="trainer-card">
-                <img src="trainer2.jpg" alt="Trainer 2">
-                <h3>Aylin Kaya</h3>
-                <p>Pilates Eğitmeni</p>
-                <p>₺300</p>
-                <a href="#" class="btn">Profiline Git</a>
-            </div>
-            <!-- Add more trainer cards as needed -->
         </div>
     </section>
 
     <!-- Why Us Section -->
     <section class="why-us">
-        <h2>Neden FitRehber?</h2>
-        <div class="benefits">
-            <div class="benefit">
-                <h3>Kapsamlı Programlar</h3>
-                <p>Her seviyeye uygun çeşitli fitness programları.</p>
-            </div>
-            <div class="benefit">
-                <h3>Uzman Eğitmenler</h3>
-                <p>Alanında profesyonel ve sertifikalı eğitmenler.</p>
-            </div>
-            <div class="benefit">
-                <h3>Kullanıcı Dostu Platform</h3>
-                <p>Kolay ve hızlı erişimle hedeflerinize ulaşın.</p>
+        <div class="container">
+            <h2 class="section-title">Neden FitRehber?</h2>
+            <div class="why-us-grid">
+                <div class="why-us-item">
+                    <img src="icon1.png" alt="Kapsamlı Programlar">
+                    <h3>Kapsamlı Programlar</h3>
+                    <p>Her seviyeye uygun çeşitli fitness programları ile hedeflerinize ulaşın.</p>
+                </div>
+                <div class="why-us-item">
+                    <img src="icon2.png" alt="Uzman Eğitmenler">
+                    <h3>Uzman Eğitmenler</h3>
+                    <p>Alanında profesyonel ve sertifikalı eğitmenlerle çalışın.</p>
+                </div>
+                <div class="why-us-item">
+                    <img src="icon3.png" alt="Esnek Erişim">
+                    <h3>Esnek Erişim</h3>
+                    <p>İster canlı yayınlarla, ister kayıttan izleyerek istediğiniz gibi çalışın.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Add Footer -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 FitRehber Türkiye. Tüm Hakları Saklıdır.</p>
+        <div class="container">
+            <p>&copy; 2025 FitRehber Türkiye | Tüm Hakları Saklıdır</p>
+        </div>
     </footer>
+
 </body>
 </html>
